@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="YU #_#">
+    <meta name="keywords" lang="es" content="etiquetas, html, pagina, ">
+    <meta name="description" lang="es" content="listas de etiquetas basicas de html ">
+    <title>Estructura general</title>
+</head>
+<body>
+    <header>
+        <h1 id="#Inicio" style="text-align:center;">Bienvenidos a nuestra pagina</h1>
+        <h3>Estructura general del proyecto</h3>
+        <a href="#inicio"><img src="c:\Users\marck\Downloads\pngwing.com.png" width="150px" height="150px" alt="LOGOTIPO" ></a>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#acerca">Acerca de</a></li>
+                <li><a href="#servicio">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main><!--Seleccion principal del contenido-->
+        <section id="Acerca">
+            <h2>Acerca de</h2>
+            <p>En esta seccion podras leer sobre quienes somos y que hacemos</p>
+            <img src="IMG/descargar (2).jpeg" width="200px" height="138px" alt="Gato con lentes">
+            <br>
+            <p>Video relacionado</p>
+            <br>
+            <video muted autoplay controls src="c:\Users\marck\OneDrive\Documentos\Escritorio\Grabación 2024-08-20 172223.mp4" width="300" height="250"></video>
+            <a href="#inicio">Volver al Inicio</a>
+        </section>
+        <section id="Servicio">
+            <h2>Servicios</h2>
+            <p>Ofrezco una variedad de servicios para ayudar a tu negocio a crecer </p>
+            <img src="IMG/descargar (3).jpeg" width="300px" height="250px" alt="mario hongo">
+            <h3>Escucha este audio</h3>
+            <br>
+            <audio controls src="d:\primera web\MEDIA\media\tuamigofiel.mp3" type="mp3" ></audio>
+            <br>
+            <a href="#servicio">Volver al Inicio</a>
+        </section>
+        <section id="contacto">
+            <h2>Servicios</h2>
+            <p>Ponte en contacto por medio de este formulario</p>
+            <div class="div#1contenedor">
+                <h2>Formulario de contacto</h2>
+                <form action="/enviar formulario" method="post">
+                    <div class="div#2formulario">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" name="nombre" id="nombre" required minlength="3" maxlength="50" placeholder="ingrese su nombre" >
+                    </div>
+                    <br>
+                    <div class="div#3formulario">
+                        <label for="email">Correo electronico:</label>
+                        <input type="email" name="email" id="email" required placeholder="ingrese tu usuario de email ejemplo lulu@gmail.com" >
+                    </div>
+                    <br>
+                    <div class="div#4formulario">
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" name="telefonol" id="telefono" required pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" placeholder="+506-1234-5678" >
+                    </div>
+                    <br>
+                    <div class="div#5formulario">
+                        <label for="asunto">Asunto:</label>
+                        <input type="text" name="asunto" id="asunto" required minlength="5" maxlength="100" placeholder="Motivo de su mensage" >
+                    </div>
+                    <br>
+                    <div class="div#6formulario">
+                        <label for="mensage">Mensage:</label>
+                       <textarea id="mensage" name="mensage" required minlength="10" maxlength="500" placeholder="Escriva aqui tu mensage"></textarea>
+                    </div>
+                    <br>
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+            <br>
+            <a href="#servicio">Volver al Inicio</a>
+        </section>
+    </main>
+    <aside>
+        <h3>Noticias recientes</h3>
+        <p>Ultimas actualizaciones sobre mis servicios y proyectos</p>
+        <img src="IMG/descargar.jpeg" alt="img lobo">
+    </aside>
+    <hr>
+    <!--pie de pagina-->
+    <footer>
+        <p>&copy;2024 MI PAGINA WEB, TODOS LOS DERECHOS RESERVADOS</p>
+        <p>
+            <a href="http://www.ina.ac.cr">Visita nuestra pagina web</a>
+        </p>
+        <br>
+        <a href="#servicio">Volver al Inicio</a>
+        <p style="text-align: right;">YU.#w#.</p>
+        <p>se agrego el mensage en main</p>
+    </footer>
+</body>
+</html>
